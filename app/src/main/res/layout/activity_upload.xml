@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity"
+    android:background="@drawable/uploadbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/lavender_border"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/lavender"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event name"
+                    android:onClick="showDatePickerDialog" />
+
+                <EditText
+                    android:id="@+id/Event_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Name"
+                    android:layout_marginLeft="55dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:background="@drawable/lavender_border"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/selectDateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date"
+                    android:onClick="showDatePickerDialog" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Selected Date"
+                    android:layout_marginLeft="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/lavender_border">
+
+                <Button
+                    android:id="@+id/selectTimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Time" />
+
+                <EditText
+                    android:id="@+id/Event_time"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Time"
+                    android:layout_marginLeft="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Codineter name"/>
+
+                <EditText
+                    android:id="@+id/Cordineter_name"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Cordineter"
+                    android:layout_marginLeft="55dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Codineter number" />
+
+                <EditText
+                    android:id="@+id/Cordineter_number"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Cordineter Number"
+                    android:layout_marginLeft="55dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:background="@drawable/lavender_border">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Link" />
+
+                <EditText
+                    android:id="@+id/Link"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Link"
+                    android:layout_marginLeft="55dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="100dp">
+
+                <EditText
+                    android:id="@+id/UploadCaption"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/lavender_border"
+                    android:hint="Add a caption..."
+                    android:padding="16dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/UploadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/lavender"
+                    android:src="@drawable/send"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</ScrollView>

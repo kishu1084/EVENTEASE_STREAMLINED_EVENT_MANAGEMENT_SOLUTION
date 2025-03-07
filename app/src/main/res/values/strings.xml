@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="options_array">
+        <item>Cultural Events</item>
+        <item>Entertainment Events</item>
+        <item>Academic Events</item>
+        <item>Sports Events</item>
+        <!-- Add more options as needed -->
+    </string-array>
+
+    <string-array name="options_user">
+        <item>Select User Type</item>
+        <item>Faculty</item>
+        <item>Students</item>
+    </string-array>
+</resources>
